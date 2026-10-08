@@ -1,9 +1,7 @@
 > ⚠️ **Early version:** indexing, hybrid search, cited chat, code explorer, security scan and dependency analysis are implemented but not yet tested end-to-end with Docker. PR review, multi-agent pipeline, test/doc generation and evaluation are on the roadmap.
 # CodeIntel — local-first AI Codebase Intelligence
 
-Connect a GitHub repo → it is cloned, parsed with **tree-sitter**, chunked **by symbol** (functions, classes,
-methods, interfaces…), embedded locally, and stored in **PostgreSQL + pgvector**. Then ask questions with
-cited answers, explore code, run a security scan, and inspect dependencies and change impact.
+CodeIntel connects to a GitHub repository, parses it with tree-sitter, splits it into symbol-aware chunks (functions, classes, methods), embeds them locally with Ollama, and stores everything in PostgreSQL + pgvector. You can then ask questions and get streamed answers with clickable file and line citations, explore code in a Monaco-based explorer, scan for security issues, and check dependencies against OSV.dev. Everything runs on your own machine with docker compose up.
 
 **Zero paid services.** LLM + embeddings run locally through [Ollama](https://ollama.com); vulnerability data
 comes from the free [OSV.dev](https://osv.dev) API (no key); GitHub sign-in uses a personal access token.
