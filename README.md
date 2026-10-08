@@ -1,3 +1,4 @@
+> ⚠️ **Early version:** indexing, hybrid search, cited chat, code explorer, security scan and dependency analysis are implemented but not yet tested end-to-end with Docker. PR review, multi-agent pipeline, test/doc generation and evaluation are on the roadmap.
 # CodeIntel — local-first AI Codebase Intelligence
 
 Connect a GitHub repo → it is cloned, parsed with **tree-sitter**, chunked **by symbol** (functions, classes,
