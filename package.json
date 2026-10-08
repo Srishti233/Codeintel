@@ -1,0 +1,11 @@
+{
+  "name": "codeintel",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": ["apps/*"],
+  "scripts": {
+    "build": "npm -w apps/server run build && npm -w apps/web run build",
+    "typecheck": "npm -w apps/server run typecheck && npm -w apps/web run typecheck",
+    "test": "npm -w apps/server test"
+  }
+}

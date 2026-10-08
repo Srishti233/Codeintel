@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body { @apply bg-bg text-slate-200; }
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-thumb { background: #30363d; border-radius: 4px; }
+.md p { @apply my-2 leading-relaxed; }
+.md ul { @apply list-disc pl-5 my-2; }
+.md ol { @apply list-decimal pl-5 my-2; }
+.md h1,.md h2,.md h3 { @apply font-semibold mt-3 mb-1; }
+.md code { @apply bg-panel px-1 rounded text-[0.85em]; }
